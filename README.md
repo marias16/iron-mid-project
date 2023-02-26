@@ -1,1 +1,1 @@
-# iron-mid-project
+# Circle - Ironhack Web Development Bootcamp Mid Project
