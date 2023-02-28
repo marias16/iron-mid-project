@@ -64,3 +64,53 @@ nav {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
 }
+
+
+/*projects*/
+
+.projects {
+    margin: 200px 110px 0px;
+}
+
+.projectsDisplay {
+    display: flex;
+    justify-content: space-between;
+}
+
+.projectsCard {
+    width: 340px;
+    box-shadow: 0px 38.7755px 77.551px rgba(0, 0, 0, 0.1);
+}
+
+.projectsCard .bodyMedium {
+    margin-bottom: 0px;
+}
+
+.projectsCardImg {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+}
+
+.projectsCardDescription {
+    background-color:white;
+    padding: 0px 0px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.projectsCardDescription a {
+    margin-top: 30px;
+
+}
+
+/*testimonials*/
+
+.testimonials {
+    background-color:#292E47;
+    background-image: url("/img/testimonial-section/orbit.png");
+    background-size: cover;
+    padding: 51px 72px 73px 123px;
+    margin-top: 200px;
+}
