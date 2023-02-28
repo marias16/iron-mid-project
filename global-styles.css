@@ -1,5 +1,90 @@
 /* body and titles */
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
 body {
-    background-color: #CCD0E8;
+    background-color: #ECF7FF;
+    margin-left: 60px;
+    margin-right: 60px;
+    color: #514D67;
+    font-family: 'Roboto';
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 70px;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 59px;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+}
+
+h4 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+/*body intro text 24 medium*/
+
+.bodyMedium {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+/* body intro text 20 regular*/
+
+.bodyRegular {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+}
+
+/*headline text 17 regular*/
+
+.htextRegular {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 150%;
+}
+
+/*headline text 17 medium*/
+
+.htextMedium {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 130%;
+}
+
+/*caption 1 text 15 regular */
+
+.captionOne {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+/*caption 2 text 13 regular */
+
+.captionTwo {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+}
+
+/*links*/
+
+a {
+    text-decoration: none;
 }

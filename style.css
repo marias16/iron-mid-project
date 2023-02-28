@@ -1,0 +1,56 @@
+/*navbar*/
+
+nav {
+    margin: 60px 110px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navLinks {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+.navLinks a {
+    color: #6B708D;
+}
+
+.CTA {
+    background-color: #072AC8;
+    color: white;
+    width: 150px;
+    height: 52px;
+    display: grid;
+    place-content: center;
+}
+
+/*hero*/
+
+.hero {
+    margin: 60px 110px 0px;
+    display:flex;
+    justify-content: space-between;
+    gap: 45px;
+}
+
+.heroCTA {
+
+    display: flex;
+
+}
+.heroImg {
+    width: 500px;
+}
+
+.heroSecondary {
+    width: 150px;
+    height: 52px;
+    display: grid;
+    place-content: center;
+    color: #6B708D;
+}
+
+
+/*logos*/
+
