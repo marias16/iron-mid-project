@@ -4,7 +4,7 @@
 
 
 body {
-    background-color: #ECF7FF;
+    background-color: #F4F6FC;
     margin-left: 60px;
     margin-right: 60px;
     color: #514D67;
@@ -15,6 +15,7 @@ h1 {
     font-weight: 700;
     font-size: 60px;
     line-height: 70px;
+    color: #292E47;
 }
 
 h2 {

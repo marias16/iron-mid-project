@@ -30,17 +30,16 @@ nav {
 .hero {
     margin: 60px 110px 0px;
     display:flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 45px;
 }
 
-.heroCTA {
-
-    display: flex;
-
+.hero p {
+    width: 435px;
 }
-.heroImg {
-    width: 500px;
+
+.heroCTA {
+    display: flex;
 }
 
 .heroSecondary {
@@ -51,6 +50,29 @@ nav {
     color: #6B708D;
 }
 
+.hero:nth-child(2) {
+    height:fit-content;
+}
+
+.heroImg {
+    width: 500px;
+}
+
+#heroCardOne {
+    position:absolute;
+        left: 650px;
+        top: 170px;
+    width: 350px;
+    background:none;
+}
+
+#heroCardTwo {
+    position:absolute;
+        right: 100px;
+        top: 550px;
+    width: 300px;
+    background:none;
+}
 
 /*logos*/
 .logos {
@@ -76,7 +98,7 @@ nav {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    row-gap: 20px;
+    row-gap: 40px;
 }
 
 .projectsCard {
@@ -100,6 +122,7 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: start;
+    box-sizing: content-box;
 }
 
 .projectsCardDescription a {
