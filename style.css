@@ -75,6 +75,7 @@ nav {
 .projectsDisplay {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .projectsCard {
@@ -169,4 +170,30 @@ nav {
     height: 50px;
     object-fit: cover;
     border-radius:100%;
+}
+
+/*services*/
+
+.services {
+    margin: 200px 110px 0;
+}
+
+.servicesCard {
+    background-color:  #FFFFFF;
+    box-sizing: border-box;
+    width: 340px;
+    padding: 40px 10px 30px 30px;
+    box-shadow: 0px 38.7755px 77.551px rgba(0, 0, 0, 0.1);
+}
+
+.servicesIcon {
+    background-color: #ECF7FF;
+    padding: 20px;
+    display: inline-block;
+    border-radius: 100%;
+}
+
+.servicesIcon img {
+    width: 40px;
+    
 }
