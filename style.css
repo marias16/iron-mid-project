@@ -243,3 +243,39 @@ nav {
     border: none;
     height: 60px;
 }
+
+/*footer*/
+footer {
+    color: #6B708D;
+    margin: 200px 110px 100px; 
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.footerDescription {
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.navLogo {
+    width: 93px;
+    object-fit: cover;
+}
+
+
+footer ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 100px;
+    row-gap: 50px;
+    align-items: end;
+}
+
+footer a{
+    color: #6B708D
+}
