@@ -5,66 +5,66 @@
 
 body {
     background-color: #F4F6FC;
-    margin-left: 60px;
-    margin-right: 60px;
+    margin: 60px 4.2% 7%;
     color: #514D67;
     font-family: 'Roboto';
+    font-size: 100%;
 }
 
 h1 {
     font-weight: 700;
-    font-size: 60px;
-    line-height: 70px;
+    font-size: 3.75em;
+    line-height: 1.17em;
     color: #292E47;
 }
 
 h2 {
     font-weight: 700;
-    font-size: 50px;
-    line-height: 59px;
+    font-size: 3.125em;
+    line-height: 1.18em;
 }
 
 h3 {
     font-weight: 700;
-    font-size: 40px;
-    line-height: 47px;
+    font-size: 2.5em;
+    line-height: 1.175em;
 }
 
 h4 {
     font-weight: 700;
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 1.5em;
+    line-height: 1.167em;
 }
 
 /*body intro text 24 medium*/
 
 .bodyMedium {
     font-weight: 500;
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 1.5em;
+    line-height: 1.17em;
 }
 
 /* body intro text 20 regular*/
 
 .bodyRegular {
     font-weight: 400;
-    font-size: 20px;
-    line-height: 150%;
+    font-size: 1.25em;
+    line-height: 1.87em;
 }
 
 /*headline text 17 regular*/
 
 .htextRegular {
     font-weight: 400;
-    font-size: 17px;
-    line-height: 150%;
+    font-size: 1.06em;
+    line-height: 1.87em;
 }
 
 /*headline text 17 medium*/
 
 .htextMedium {
     font-weight: 500;
-    font-size: 17px;
+    font-size: 1.06em;
     line-height: 130%;
 }
 
@@ -72,20 +72,35 @@ h4 {
 
 .captionOne {
     font-weight: 400;
-    font-size: 15px;
-    line-height: 18px;
+    font-size: 0.93em;
+    line-height: 1.2em;
 }
 
 /*caption 2 text 13 regular */
 
 .captionTwo {
     font-weight: 400;
-    font-size: 13px;
-    line-height: 15px;
+    font-size: 0.8em;
+    line-height: 1.38em;
 }
 
 /*links*/
 
 a {
     text-decoration: none;
+}
+
+/*margin-sections*/
+
+.marginTopSections {
+    margin-top: 12.5em;
+}
+
+@media (max-width: 1200px) {
+    html {
+      font-size: 0.83em;
+    }
+    .marginTopSections {
+        margin-top: 9em;
+    }
 }

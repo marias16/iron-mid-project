@@ -1,10 +1,19 @@
+
+.narrowSection {
+    margin-right: 6.875em;
+    margin-left: 6.875em;
+}
+
 /*navbar*/
 
 nav {
-    margin: 60px 110px 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.navLogo {
+    width: 60px;
 }
 
 .navLinks {
@@ -19,23 +28,28 @@ nav {
 .CTA {
     background-color: #072AC8;
     color: white;
-    width: 150px;
-    height: 52px;
+    width: 9.375em;
+    height: 3.25em;
     display: grid;
-    place-content: center;
+    place-items: center;
+    text-align:center;
 }
+
+
 
 /*hero*/
 
 .hero {
-    margin: 60px 110px 0px;
+    margin-top: 3.75em;
     display:flex;
     justify-content: center;
-    gap: 45px;
+    gap: 2.8em;
+    align-items: center;
 }
 
 .hero p {
-    width: 435px;
+    width: 27.18em;
+    margin-bottom: 2em;
 }
 
 .heroCTA {
@@ -43,42 +57,44 @@ nav {
 }
 
 .heroSecondary {
-    width: 150px;
-    height: 52px;
+    width: 9.4em;
+    height: 3.25em;
     display: grid;
     place-content: center;
+    text-align:center;
     color: #6B708D;
 }
 
-.hero:nth-child(2) {
+.hero div {
     height:fit-content;
 }
 
 .heroImg {
-    width: 500px;
+    width: 31.25em;
 }
 
 #heroCardOne {
     position:absolute;
-        left: 650px;
-        top: 170px;
-    width: 350px;
+        left: 40.5em;
+        top: 10.6em;
+    width: 22em;
     background:none;
 }
 
 #heroCardTwo {
     position:absolute;
-        right: 100px;
-        top: 550px;
-    width: 300px;
+        right: 6.25em;
+        top: 34.3em;
+    width: 18.75em;
     background:none;
 }
 
 /*logos*/
 .logos {
-    margin: 130px 110px 0px;
+    margin-top: 8em;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .logoImg {
@@ -90,20 +106,23 @@ nav {
 
 /*projects*/
 
-.projects {
-    margin: 200px 110px 0px;
-}
 
 .projectsDisplay {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    row-gap: 40px;
+    row-gap: 2.5em;
 }
 
 .projectsCard {
-    width: 340px;
+    width: 21em;
     box-shadow: 0px 38.7755px 77.551px rgba(0, 0, 0, 0.1);
+    background-color:white;
+    padding: 0px 0px 1.9em 1.9em;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    box-sizing: border-box;
 }
 
 .projectsCard .bodyMedium {
@@ -111,23 +130,15 @@ nav {
 }
 
 .projectsCardImg {
-    width: 100%;
+    width: 21em;
     height: 60%;
     object-fit: cover;
+    margin-left: -1.9em;
 }
 
-.projectsCardDescription {
-    background-color:white;
-    padding: 0px 0px 30px 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    box-sizing: content-box;
-}
 
-.projectsCardDescription a {
-    margin-top: 30px;
-
+.projectsCard a {
+    margin-top: 1.9em;
 }
 
 /*testimonials*/
@@ -136,8 +147,7 @@ nav {
     background-color:#292E47;
     background-image: url("/img/testimonial-section/orbit.png");
     background-size: cover;
-    padding: 51px 72px 73px 123px;
-    margin-top: 200px;
+    padding: 3.2em 4.5em 4.6em 7.7em;
     display: flex;
     justify-content: space-between;
 }
@@ -149,7 +159,7 @@ nav {
 }
 
 .testimonialsEmoji {
-    width: 150px;
+    width: 9.4em;
 }
 
 .testimonialsDescription {
@@ -157,7 +167,7 @@ nav {
     text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 104px;
+    gap: 6.5em;
 }
 
 .testimonialsDescription h3 {
@@ -198,15 +208,12 @@ nav {
 
 /*services*/
 
-.services {
-    margin: 200px 110px 0;
-}
 
 .servicesCard {
     background-color:  #FFFFFF;
     box-sizing: border-box;
-    width: 340px;
-    padding: 40px 10px 30px 30px;
+    width: 21.25em;
+    padding: 2.5em 0.625em 1.9em 1.9em;
     box-shadow: 0px 38.7755px 77.551px rgba(0, 0, 0, 0.1);
 }
 
@@ -225,8 +232,7 @@ nav {
 /*newsletter*/
 
 .newsletter {
-    margin-top: 200px;
-    padding: 136px 355px;
+    padding: 8.5em 21em;
     background-color: #FFC600;
     color:#292E47;
     display: flex;
@@ -237,6 +243,7 @@ nav {
 
 .newsletter h3 {
     margin-bottom: 0px;
+    text-align: center;
 }
 
 .newsletter p {
@@ -246,31 +253,30 @@ nav {
 .suscribe {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 0.6em;
 }
 
 .suscribe input {
     border: none;
     background-color: #F4F6FC;
-    width: 300px;
-    height: 60px;
+    width: 18.75em;
+    height: 3.75em;
 
     background-image: url("img/newsletter/icon/mail.svg");
     background-repeat: no-repeat;
-    background-size: 30px;
+    background-size: 1.9em;
     background-position: 15px 50%;
-    text-indent: 50px;
+    text-indent: 3.125em;
 }
 
 .suscribe button {
     border: none;
-    height: 60px;
+    height: 3.75em;
 }
 
 /*footer*/
 footer {
     color: #6B708D;
-    margin: 200px 110px 100px; 
     display: flex;
     justify-content: space-between;
     
@@ -283,8 +289,8 @@ footer {
     justify-content: space-between;
 }
 
-.navLogo {
-    width: 93px;
+.footerLogo {
+    width: 5.8em;
     object-fit: cover;
 }
 
@@ -294,11 +300,85 @@ footer ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    column-gap: 100px;
-    row-gap: 50px;
+    column-gap: 6.25em;
+    row-gap: 3em;
     align-items: end;
 }
 
 footer a{
     color: #6B708D
+}
+
+
+@media only screen and (max-width: 1200px){
+
+    /*hero*/
+    .hero {
+        vertical-align: baseline;
+        gap: 0px;
+    }
+    .hero h1 {
+        margin-bottom: 0px;
+    }
+    .hero p {
+        width: 25em;
+    }
+    #heroCardOne {
+        position:absolute;
+            left: 32.5em;
+            top: 10.6em;
+    }
+    
+    #heroCardTwo {
+        position:absolute;
+            right: 1.25em;
+            top: 34.3em;
+    }
+    
+    /*logo*/
+    .logos {
+        margin-left: 2.4em;
+        margin-right: 2.4em;
+    }
+
+    /*projects*/
+    .projects{
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    /*testimonials*/
+    .testimonials {
+        padding-left:2em;
+        padding-right: 2em;
+    }
+
+    .testimonialsDescription {
+        gap: 2em;
+    }
+    .testimonialsDescription h3 {
+        margin-bottom: 0px;
+    }
+    .testimonialsDescription .bodyMedium {
+        width: 20em;
+    }
+
+    /*services*/ 
+    .services {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    
+
+    /*footer*/
+    footer {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    footer ul {
+        column-gap: 3em;
+        row-gap: 3em;  
+    }
 }
