@@ -101,16 +101,18 @@ a {
 @media (min-width: 320px) and (max-width: 480px) {
     body {
         font-size: 0.5em;
+        margin: 2em 2em;
     }
 
-    h1 {
-        font-size: 3em;
+    .captionTwo {
+        font-size: 1.2em;
     }
+   
 
-    .bodyRegular {
-        font-size: 1.5em;
-    }
-    
+   .htextMedium, .htextRegular, .bodyRegular, .bodyMedium {
+    font-size: 1.7em;
+   }
+
 }
 
 

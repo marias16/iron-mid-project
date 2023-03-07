@@ -35,6 +35,9 @@ nav {
     text-align:center;
 }
 
+.navMenu, #navCTAMobile, #navClose {
+    display: none;
+}
 
 
 /*hero*/
@@ -176,7 +179,7 @@ nav {
 
 .testimonialsDescription .bodyMedium {
     color: #FFC600;
-    width: 596px;
+    width: 37.25em;
 }
 
 .testimonialsClient {
@@ -314,7 +317,66 @@ footer a{
 }
 
 @media (min-width: 320px) and (max-width: 480px){
+
+    .narrowSection {
+        margin-right: 0em;
+        margin-left: 0em;
+    }
+
+    .marginTopSections {
+        margin-top: 4em;
+    }
     
+    nav .CTA {
+        display: none;
+    }
+
+    .navMenu, #navCTAMobile, #navClose {
+        display: inline-block;
+    }
+
+    .hamburguer {
+        width: 3em;
+    }
+    
+    #navCTAMobile {
+        background-color: #072AC8;
+        color: white;
+        display: grid;
+        place-items: center;
+        text-align:center;
+        padding: 5px 10px;
+    }
+
+    .navLinks {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .navLinksVisible {
+        visibility: visible;
+        opacity: 1;
+    }
+
+
+    .navLinks {
+        position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+        flex-direction: column;
+        justify-content: start;
+        align-items: self-end;
+        gap: 3em;
+        background-color: white;
+        padding: 2rem;
+        padding-left: 10em;
+        z-index: 99;
+        font-size: 1.2em;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+    }
+
+
     .hero {
         display: flex;
         flex-direction: column-reverse;
@@ -334,21 +396,132 @@ footer a{
     }
 
     .hero > :first-child {
-        text-align: center;
+        text-align: left;
     }
 
-    .hero p {
+    .heroCTA {
+        flex-direction: column;
+        justify-content: center;
+        gap: 1.2em;
+        
+    }
+
+    .heroCTA a {
+        width: 100%;
+        height:5em;
+        font-size: 1.2em;
+    }
+
+    .logos {
+        flex-direction: row;
+        flex-wrap:unset;
+        column-gap: 10%;
+        overflow-x: scroll
+    }
+
+    .logoImg {
+        width: 30%;
+    }
+
+    .projects{
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .projectsDisplay {
+        flex-direction: column;
+    }
+
+    .projectsCard {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .projectsCard img {
+        width: 100%;
+        height: 20em;
+    }
+
+    .projectsCard div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .testimonials {
+        width: 90%;
+        margin-left:-60px;
+    }
+
+    .testimonialsEmojis {
         display: none;
     }
 
-    .hero
+    .testimonialsDescription {
+        text-align: left;
+        align-items: start;
+        /*width: 70%;*/
+        /*font-size: 1.5em;*/
+        gap: 5px;
+    }
+
+    .testimonialsDescription h3{
+        margin-bottom: 0px
+    }
+
+    .testimonialsDescription .bodyMedium {
+        width: auto;
+    }
+
+    .services {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .servicesCard {
+        width: 95%;
+        padding-right: 10%;
+    }
+
+    .newsletter {
+        padding: 5em 2em;
+        align-items: self-start;
+    }
 
     .suscribe {
         flex-direction: column;
+        width:100%;
     }
     .suscribe input {
-        width: 100%;
+        width: auto;
     }
+
+    .suscribe button {
+        width: auto;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .footerDescription {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    footer ul {
+        display: inline-block;
+        padding: 0px;
+    }
+
+    footer li {
+        margin-bottom: 5px;
+    }
+
+
    
 }
 
@@ -358,10 +531,6 @@ footer a{
     .narrowSection {
         margin-right: 0em;
         margin-left: 0em;
-    }
-
-    .navLinks {
-        display: none;
     }
 
     .hero {
@@ -484,12 +653,6 @@ footer a{
         padding: 8.5em 0em;
     }
 
-
-
-    footer {
-        margin-right: auto;
-        margin-left: auto;
-    }
 
     footer ul {
         column-gap: 3em;
