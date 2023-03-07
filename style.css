@@ -172,6 +172,7 @@ nav {
     text-align: center;
     display: flex;
     flex-direction: column;
+    width: 70%;
     gap: 6.5em;
 }
 
@@ -181,7 +182,6 @@ nav {
 
 .testimonialsDescription .bodyMedium {
     color: #FFC600;
-    width: 37.25em;
 }
 
 .testimonialsClient {
@@ -466,14 +466,11 @@ footer a{
         text-align: left;
         align-items: start;
         gap: 5px;
+        width: 100%;
     }
 
     .testimonialsDescription h3{
         margin-bottom: 0px
-    }
-
-    .testimonialsDescription .bodyMedium {
-        width: auto;
     }
 
     .services {
@@ -620,6 +617,7 @@ footer a{
 
     .testimonialsDescription {
         gap: 2em;
+        width: 100%;
     }
 
     .testimonialsEmojiRow {
