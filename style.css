@@ -50,8 +50,8 @@ nav {
     align-items: center;
 }
 
+
 .hero p {
-    width: 27.18em;
     margin-bottom: 2em;
 }
 
@@ -68,28 +68,30 @@ nav {
     color: #6B708D;
 }
 
-.hero:nth-child(2) {
-    position: relative;
+.heroDescription {
+    width: 50%;
 }
 
 .heroImg {
-    width: 31.25em;
+    background: url(img/hero-section/hero-image.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 #heroCardOne {
-    position:absolute;
-        left: 29em;
-        top: 0em;
-    width: 22em;
-    background:none;
+    width: 50%;
+    align-self: flex-start;
 }
 
 #heroCardTwo {
-    position:absolute;
-        left:55em;
-        top:20em;
-    width: 18.75em;
-    background:none;
+    width: 50%;
+    align-self: flex-end;
 }
 
 /*logos*/
@@ -150,7 +152,7 @@ nav {
     background-color:#292E47;
     background-image: url("/img/testimonial-section/orbit.png");
     background-size: cover;
-    padding: 3.2em 4.5em 4.6em 7.7em;
+    padding: 3.2em 4.5em 4.6em 3.2em;
     display: flex;
     justify-content: space-between;
 }
@@ -383,20 +385,23 @@ footer a{
         gap: 0;
     }
 
+    .heroImg {
+        width:80%;
+    }
+
     #heroCardOne {
         width: 50%;
-        top: 0;
-        left: 0;
+        align-self: flex-start;
     }
-
+    
     #heroCardTwo {
-        width: 40%;
-        top: 40%;
-        left: 55%;
+        width: 50%;
+        align-self: flex-end;
     }
 
-    .hero > :first-child {
+    .heroDescription {
         text-align: left;
+        width: 100%;
     }
 
     .heroCTA {
@@ -438,7 +443,7 @@ footer a{
     }
 
     .projectsCard img {
-        width: 100%;
+        width: calc(100% + 1.9em);
         height: 20em;
     }
 
@@ -450,7 +455,7 @@ footer a{
     
     .testimonials {
         width: 90%;
-        margin-left:-60px;
+        margin-left: -2em;
     }
 
     .testimonialsEmojis {
@@ -460,8 +465,6 @@ footer a{
     .testimonialsDescription {
         text-align: left;
         align-items: start;
-        /*width: 70%;*/
-        /*font-size: 1.5em;*/
         gap: 5px;
     }
 
@@ -546,28 +549,29 @@ footer a{
         
     }
 
-    .heroImg {
-        width: 20em;
-    }
-
     .hero h1 {
         margin-bottom: 0px;
     }
-    
+
+    .heroImg {
+        width: 80%;
+    }
+
     #heroCardOne {
-        width: 30%;
-        position:absolute;
-            left: 10em;
-            top: 0em;
+        width: 15em;
+        align-self: flex-start;
     }
     
     #heroCardTwo {
-        width: 30%;
-        position:absolute;
-            left: 25em;
-            top: 12em;
+        width:14em;
+        align-self: flex-end;
     }
     
+    .heroDescription {
+        width: 100%;
+    }
+
+
     .logos {
         margin-left: 2.4em;
         margin-right: 2.4em;
