@@ -1,0 +1,19 @@
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1em;
+}
+
+.contactDivision {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contactInput {
+    padding: 0.5em 1em;
+    background-color: rgba(107, 112, 141, 0.1);
+    color: #6B708D;
+    border: none;
+    width: 100%;
+}
