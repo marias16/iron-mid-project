@@ -1,0 +1,665 @@
+
+.narrowSection {
+    margin-right: 6.875em;
+    margin-left: 6.875em;
+}
+
+/*navbar*/
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navLogo {
+    width: 60px;
+}
+
+.navLinks {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+.navLinks a {
+    color: #6B708D;
+}
+
+.CTA {
+    background-color: #072AC8;
+    color: white;
+    width: 9.375em;
+    height: 3.25em;
+    display: grid;
+    place-items: center;
+    text-align:center;
+}
+
+.navMenu, #navCTAMobile, #navClose {
+    display: none;
+}
+
+
+/*hero*/
+
+.hero {
+    margin-top: 3.75em;
+    display:flex;
+    justify-content: center;
+    gap: 2.8em;
+    align-items: center;
+}
+
+
+.hero p {
+    margin-bottom: 2em;
+}
+
+.heroCTA {
+    display: flex;
+}
+
+.heroSecondary {
+    width: 9.4em;
+    height: 3.25em;
+    display: grid;
+    place-content: center;
+    text-align:center;
+    color: #6B708D;
+}
+
+.heroDescription {
+    width: 50%;
+}
+
+.heroImg {
+    background: url(img/hero-section/hero-image.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#heroCardOne {
+    width: 50%;
+    align-self: flex-start;
+}
+
+#heroCardTwo {
+    width: 50%;
+    align-self: flex-end;
+}
+
+/*logos*/
+.logos {
+    margin-top: 8em;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logoImg {
+    width: 10%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+
+/*projects*/
+
+
+.projectsDisplay {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 2.5em;
+}
+
+.projectsCard {
+    width: 21em;
+    box-shadow: 0px 38.7755px 77.551px rgba(0, 0, 0, 0.1);
+    background-color:white;
+    padding: 0px 0px 1.9em 1.9em;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    box-sizing: border-box;
+}
+
+.projectsCard .bodyMedium {
+    margin-bottom: 0px;
+}
+
+.projectsCardImg {
+    width: inherit;
+    height: 60%;
+    object-fit: cover;
+    margin-left: -1.9em;
+}
+
+
+.projectsCard a {
+    margin-top: 1.9em;
+}
+
+/*testimonials*/
+
+.testimonials {
+    background-color:#292E47;
+    background-image: url("/img/testimonial-section/orbit.png");
+    background-size: cover;
+    padding: 3.2em 4.5em 4.6em 3.2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.testimonialsEmojis {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.testimonialsEmoji {
+    width: 9.4em;
+}
+
+.testimonialsDescription {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    gap: 6.5em;
+}
+
+.testimonialsDescription h3 {
+    color: #F4F6FC;
+}
+
+.testimonialsDescription .bodyMedium {
+    color: #FFC600;
+}
+
+.testimonialsClient {
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+
+.testimonialsClient div {
+    text-align: left;
+}
+
+.testimonialsClient p {
+    margin: 0;
+    color: #F4F6FC;
+}
+
+.testimonialsClient p:first-of-type {
+    color: #A2D6F9;
+}
+
+
+.testimonialsClient img {
+    width:50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius:100%;
+}
+
+.testimonialsEmojiRow {
+    display: none;
+}
+
+/*services*/
+
+
+.servicesCard {
+    background-color:  #FFFFFF;
+    box-sizing: border-box;
+    width: 21.25em;
+    padding: 2.5em 0.625em 1.9em 1.9em;
+    box-shadow: 0px 38.7755px 77.551px rgba(0, 0, 0, 0.1);
+}
+
+.servicesIcon {
+    background-color: #ECF7FF;
+    padding: 1.25em;
+    display: inline-block;
+    border-radius: 100%;
+}
+
+.servicesIcon img {
+    width: 2.5em;
+    
+}
+
+/*newsletter*/
+
+.newsletter {
+    padding: 8.5em 21em;
+    background-color: #FFC600;
+    color:#292E47;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter h3 {
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.newsletter p {
+    margin-bottom: 2em;
+}
+
+.suscribe {
+    display: flex;
+    flex-direction: row;
+    gap: 0.6em;
+}
+
+.suscribe input {
+    border: none;
+    background-color: #F4F6FC;
+    width: 18.75em;
+    height: 3.75em;
+
+    background-image: url("img/newsletter/icon/mail.svg");
+    background-repeat: no-repeat;
+    background-size: 1.9em;
+    background-position: 15px 50%;
+    text-indent: 3.125em;
+}
+
+.suscribe button {
+    border: none;
+    height: 3.75em;
+}
+
+/*footer*/
+footer {
+    color: #6B708D;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.footerDescription {
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footerLogo {
+    width: 5.8em;
+    object-fit: cover;
+}
+
+
+footer ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 6.25em;
+    row-gap: 3em;
+    align-items: end;
+}
+
+footer a{
+    color: #6B708D
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+
+    .narrowSection {
+        margin-right: 0em;
+        margin-left: 0em;
+    }
+
+    .marginTopSections {
+        margin-top: 4em;
+    }
+    
+    nav .CTA {
+        display: none;
+    }
+
+    .navMenu, #navCTAMobile, #navClose {
+        display: inline-block;
+    }
+
+    .hamburguer {
+        width: 3em;
+    }
+    
+    #navCTAMobile {
+        background-color: #072AC8;
+        color: white;
+        display: grid;
+        place-items: center;
+        text-align:center;
+        padding: 5px 10px;
+    }
+
+    .navLinks {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .navLinksVisible {
+        visibility: visible;
+        opacity: 1;
+    }
+
+
+    .navLinks {
+        position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+        flex-direction: column;
+        justify-content: start;
+        align-items: self-end;
+        gap: 3em;
+        background-color: white;
+        padding: 2rem;
+        padding-left: 10em;
+        z-index: 99;
+        font-size: 1.2em;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+    }
+
+
+    .hero {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 0;
+    }
+
+    .heroImg {
+        width:80%;
+    }
+
+    #heroCardOne {
+        width: 50%;
+        align-self: flex-start;
+    }
+    
+    #heroCardTwo {
+        width: 50%;
+        align-self: flex-end;
+    }
+
+    .heroDescription {
+        text-align: left;
+        width: 100%;
+    }
+
+    .heroCTA {
+        flex-direction: column;
+        justify-content: center;
+        gap: 1.2em;
+        
+    }
+
+    .heroCTA a {
+        width: 100%;
+        height:5em;
+        font-size: 1.2em;
+    }
+
+    .logos {
+        flex-direction: row;
+        flex-wrap:unset;
+        column-gap: 10%;
+        overflow-x: scroll
+    }
+
+    .logoImg {
+        width: 30%;
+    }
+
+    .projects{
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .projectsDisplay {
+        flex-direction: column;
+    }
+
+    .projectsCard {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .projectsCard img {
+        width: calc(100% + 1.9em);
+        height: 20em;
+    }
+
+    .projectsCard div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .testimonials {
+        width: 90%;
+        margin-left: -2em;
+    }
+
+    .testimonialsEmojis {
+        display: none;
+    }
+
+    .testimonialsDescription {
+        text-align: left;
+        align-items: start;
+        gap: 5px;
+        width: 100%;
+    }
+
+    .testimonialsDescription h3{
+        margin-bottom: 0px
+    }
+
+    .services {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .servicesCard {
+        width: 95%;
+        padding-right: 10%;
+    }
+
+    .newsletter {
+        padding: 5em 2em;
+        align-items: self-start;
+    }
+
+    .suscribe {
+        flex-direction: column;
+        width:100%;
+    }
+    .suscribe input {
+        width: auto;
+    }
+
+    .suscribe button {
+        width: auto;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .footerDescription {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    footer ul {
+        display: inline-block;
+        padding: 0px;
+    }
+
+    footer li {
+        margin-bottom: 5px;
+    }
+
+
+   
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 767px){
+    
+    .narrowSection {
+        margin-right: 0em;
+        margin-left: 0em;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .hero > :first-child {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        
+    }
+
+    .hero h1 {
+        margin-bottom: 0px;
+    }
+
+    .heroImg {
+        width: 80%;
+    }
+
+    #heroCardOne {
+        width: 15em;
+        align-self: flex-start;
+    }
+    
+    #heroCardTwo {
+        width:14em;
+        align-self: flex-end;
+    }
+    
+    .heroDescription {
+        width: 100%;
+    }
+
+
+    .logos {
+        margin-left: 2.4em;
+        margin-right: 2.4em;
+    }
+
+    .logoImg {
+        width: 15%;
+        flex-wrap: wrap;
+        gap: 10%;
+    }
+    
+
+    .projects{
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .projectsDisplay {
+        flex-direction: column;
+    }
+
+    .projectsCard {
+        flex-direction: row;
+        width: auto;
+        padding-bottom:0;
+        height: 20em;
+    }
+
+    .projectsCard img {
+        width: 50%;
+        height: 100%;
+    }
+
+    .projectsCard div {
+        font-size: 1.2em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 1em;
+    }
+
+    .testimonials {
+        padding-left:2em;
+        padding-right: 2em;
+    }
+
+    .testimonialsDescription {
+        gap: 2em;
+        width: 100%;
+    }
+
+    .testimonialsEmojiRow {
+        display: flex;
+        justify-content: center;
+        margin-bottom: -2em;
+    }
+
+    .testimonialsEmoji {
+        width:9%;
+    }
+    
+    .testimonialsDescription h3 {
+        margin-bottom: 0px;
+    }
+    .testimonialsDescription .bodyMedium {
+        width: 20em;
+        font-size: 1.5em;
+    }
+
+    .testimonialsEmojis {
+        display: none;
+    }
+
+    .services {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .servicesCard {
+        width: auto;
+    }
+
+    .newsletter {
+        padding: 8.5em 0em;
+    }
+
+
+    footer ul {
+        column-gap: 3em;
+        row-gap: 3em;  
+    }
+}
+
+

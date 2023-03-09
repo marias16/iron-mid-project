@@ -1,0 +1,143 @@
+/* body and titles */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+body {
+    background-color: #F4F6FC;
+    margin: 4em 4.2% 7%;
+    color: #514D67;
+    font-family: 'Roboto';
+    font-size: 100%;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 3.75em;
+    line-height: 1.17em;
+    color: #292E47;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 3.125em;
+    line-height: 1.18em;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 2.5em;
+    line-height: 1.175em;
+}
+
+h4 {
+    font-weight: 700;
+    font-size: 1.5em;
+    line-height: 1.167em;
+}
+
+/*body intro text 24 medium*/
+
+.bodyMedium {
+    font-weight: 500;
+    font-size: 1.5em;
+    line-height: 1.17em;
+}
+
+/* body intro text 20 regular*/
+
+.bodyRegular {
+    font-weight: 400;
+    font-size: 1.25em;
+    line-height: 1.87em;
+}
+
+/*headline text 17 regular*/
+
+.htextRegular {
+    font-weight: 400;
+    font-size: 1.06em;
+    line-height: 1.87em;
+}
+
+/*headline text 17 medium*/
+
+.htextMedium {
+    font-weight: 500;
+    font-size: 1.06em;
+    line-height: 130%;
+}
+
+/*caption 1 text 15 regular */
+
+.captionOne {
+    font-weight: 400;
+    font-size: 0.93em;
+    line-height: 1.2em;
+}
+
+/*caption 2 text 13 regular */
+
+.captionTwo {
+    font-weight: 400;
+    font-size: 0.8em;
+    line-height: 1.38em;
+}
+
+/*links*/
+
+a {
+    text-decoration: none;
+}
+
+/*margin-sections*/
+
+.marginTopSections {
+    margin-top: 12.5em;
+}
+
+/*media query*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    body {
+        font-size: 0.5em;
+        margin: 2em 2em;
+    }
+
+    .captionTwo {
+        font-size: 1.2em;
+    }
+   
+
+   .htextMedium, .htextRegular, .bodyRegular, .bodyMedium {
+    font-size: 1.7em;
+   }
+
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 767px){
+    html {
+      font-size: 0.83em;
+    }
+
+    .htextMedium {
+        font-size: 1.2em;
+    }
+
+    .htextRegular {
+        font-size: 1.2em;
+    }
+
+    body {
+        margin-top: 2em;
+    }
+
+    .marginTopSections {
+        margin-top: 9em;
+    }
+
+    
+}
+
+
