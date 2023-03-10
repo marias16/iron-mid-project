@@ -30,8 +30,10 @@
         <section class="contactSection narrowSection">
             <h1>Contact Us</h1>
             <form class="contactForm" method="post" action="#">
-                <label class="bodyRegular" for="name" required>Full Name*</label> <br>
-                <input class="contactInput htextRegular" type="text" id="name" placeholder="Enter your full name">
+                <div>
+                    <label class="bodyRegular" for="name" required>Full Name*</label> <br>
+                    <input class="contactInput htextRegular" type="text" id="name" placeholder="Enter your full name">
+                </div>
                 <div class="contactDivision">
                     <div>
                         <label class="bodyRegular" for="email">Email</label> <br>
@@ -42,6 +44,11 @@
                         <input class="contactInput htextRegular" type="number" id="phone" placeholder="Enter your phone number">
                     </div>
                 </div>
+                <div>
+                    <label class="bodyRegular" for="message">Message</label> <br>
+                    <textarea class="contactInput" id="message" rows="8">Write message here...</textarea>
+                </div>
+                <button type="submit" class="contactButton htextMedium">Submit</button>
 
             </form>
 
