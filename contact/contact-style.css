@@ -1,0 +1,69 @@
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2.5em;
+    box-sizing: content-box;
+}
+
+
+.contactDivision {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.contactDivision div {
+    width: 45%;
+}
+
+.contactInput {
+    width: 100%;
+    padding: 1.3em 0em 1.3em 0em;
+    background-color: rgba(107, 112, 141, 0.1);
+    color: #6B708D;
+    border: none;
+    text-indent: 1.2em;
+}
+
+
+.contactButton {
+    width: 100%;
+    border:none;
+    background-color: #072AC8;
+    color: white;
+    padding: 1.5em 0em;
+}
+
+textarea {
+    font-family: 'Roboto'; 
+    font-weight: 400;
+    font-size: 1.06em;
+    line-height: 1.87em;
+    color: #6B708D;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .contactDivision {
+        flex-direction: column;
+        gap: 2.5em;
+    }
+
+    .contactDivision div {
+        width: 100%;
+    }
+
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    textarea {
+        font-size: 1.2em;
+    }
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+    textarea {
+        font-size: 1.5em;
+    }
+}
