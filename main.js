@@ -1,3 +1,5 @@
+
+
 // menu mobile
 const nav = document.querySelector('#navSideMenu')
 const closeIcon = document.querySelector('#navClose')
@@ -14,8 +16,9 @@ const navClose = () => {
 openIcon.addEventListener('click', navOpen);
 closeIcon.addEventListener('click', navClose);
 
-// randomize project section 
-async function fetchProjects() {
+
+  // randomize project section 
+  async function fetchProjectsSection() {
     try {
         const response = await fetch('https://raw.githubusercontent.com/ironhack-jc/mid-term-api/main/projects');
         let data = await response.json();
@@ -28,6 +31,7 @@ async function fetchProjects() {
         const $projectURL = document.querySelectorAll('.projectsCard a');
 
         //assign each data element to DOM elements, just three elements have to show up
+        //for the project page, the project cant show up in the section 'Other Projects'
         for(let i=0; i<=2; i++) {
             $projectImg[i].src = data[i].image;
             $projectTitle[i].innerHTML = data[i].name;
@@ -39,8 +43,4 @@ async function fetchProjects() {
     }
 }
 
-fetchProjects()
-
-
-
-
+fetchProjectsSection()
