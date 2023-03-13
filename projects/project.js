@@ -1,6 +1,6 @@
 const SERVER_URL = 'https://raw.githubusercontent.com/ironhack-jc/mid-term-api/main/projects';
 
-window.onload = () => {
+
     //get uuid from project
     function _getProjectId() {
         const params = new Proxy(new URLSearchParams(window.location.search), {
@@ -33,7 +33,8 @@ window.onload = () => {
             $projectDate.textContent = project.completed_on;
             $projectImg.src = project.image;
             $projectImgBlur.src = project.image;
-            $projectDescription.textContent = project.content;
+            $projectDescription.innerHTML = project.content;
+            document.title = `Circle - ${project.name}`;
 
         } catch(err) {
             console.log(err);
@@ -72,7 +73,7 @@ window.onload = () => {
     }
 
     fetchProjectsSection()
-}
+
 
 
 
