@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Circle - Empower your business</title>
+        <title>Circle - Contact Us</title>
         <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="/global-styles.css">
+        <link rel="stylesheet" type="text/css" href="../global-styles.css">
         <link rel="stylesheet" type="text/css" href="contact-style.css">
     </head>
     <body>
-        <nav class="narrowSection">
-            <img class="navLogo" src="/img/logos/circle.svg">
+        <nav class="narrowSection" id="top">
+            <a href="../index.html"><img class="navLogo" src="../img/logos/circle.svg"></a>
             <div class="navLinks" id="navSideMenu">
-                <a id="navClose" href="#">
+                <a id="navClose" href="">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/OOjs_UI_icon_close-ltr.svg" alt="close">
                 </a>
-                <a class="htextMedium" href="index.html">Home</a>
-                <a class="htextMedium" href="#projects">Projects</a>
-                <a class="htextMedium" href="#services">Services</a>
-                <a class=".CTA" href="#" id="navCTAMobile">
+                <a class="htextMedium" href="../index.html">Home</a>
+                <a class="htextMedium" href="../projects/projects.html?uuid=1">Projects</a>
+                <a class="htextMedium" href="../index.html">Services</a>
+                <a class=".CTA" href="contact.html" id="navCTAMobile">
                     <span class="htextMedium">Contact Us</span>
                 </a>
             </div>
-            <a href="#" class="CTA">
+            <a href="contact.html" class="CTA">
                 <span class="htextMedium">Contact Us</span>
             </a>
             <a href="#" class="navMenu" id="navOpen">
@@ -29,7 +29,12 @@
         </nav>
         <section class="contactSection narrowSection">
             <h1>Contact Us</h1>
-            <form class="contactForm" method="post" action="#">
+            <div id="formFeedback" class="invisible">
+                <p class="htextMedium"></p>
+                <p class="bodyRegular"></p>
+            </div>
+                
+             <form class="contactForm">
                 <div>
                     <label class="bodyRegular" for="name" required>Full Name*</label> <br>
                     <input class="contactInput htextRegular" type="text" id="name" placeholder="Enter your full name">
@@ -46,17 +51,18 @@
                 </div>
                 <div>
                     <label class="bodyRegular" for="message">Message</label> <br>
-                    <textarea class="contactInput" id="message" rows="8">Write message here...</textarea>
+                    <textarea class="contactInput" id="message" rows="8">Write your message here...</textarea>
                 </div>
-                <button type="submit" class="contactButton htextMedium">Submit</button>
-
+                <a href="#top">
+                    <button type="button" class="contactButton htextMedium">Submit</button>
+                </a>
             </form>
 
         </section>
         
         <footer class="marginTopSections narrowSection">
             <div class="footerDescription">
-                <img src="/img/logos/circle.svg" class="footerLogo">
+                <img src="../img/logos/circle.svg" class="footerLogo">
                 <p class="htextRegular">2972 Westheimer Rd. Santa Ana,<br>Illinois 85486 </p>
             </div>
             <ul>
@@ -70,4 +76,5 @@
         </footer>
     </body>
     <script src="../main.js"></script>
+    <script src="contact.js"></script>
 </html>

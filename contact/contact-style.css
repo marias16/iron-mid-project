@@ -43,6 +43,31 @@ textarea {
     color: #6B708D;
 }
 
+
+#formFeedback {
+    padding: 0.5em 1em;
+    margin-bottom: 1em;
+}
+
+.htextMedium {
+    font-size: 1.5em;
+}
+
+.invisible {
+    display: none;
+}
+
+.formSuccess {
+    background-color: #31bf01;
+    color: white;
+}
+
+.formError {
+    background-color: #ff7348;
+    color: white;
+}
+
+
 @media (min-width: 320px) and (max-width: 767px) {
     .contactDivision {
         flex-direction: column;
