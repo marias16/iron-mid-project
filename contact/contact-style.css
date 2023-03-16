@@ -35,6 +35,10 @@
     padding: 1.5em 0em;
 }
 
+.contactButton:active {
+    background-color: #072ac8cd;
+}
+
 textarea {
     font-family: 'Roboto'; 
     font-weight: 400;
@@ -49,9 +53,7 @@ textarea {
     margin-bottom: 1em;
 }
 
-.htextMedium {
-    font-size: 1.5em;
-}
+
 
 .invisible {
     display: none;
@@ -89,6 +91,10 @@ textarea {
 
 @media (min-width: 320px) and (max-width: 480px) {
     textarea {
+        font-size: 1.5em;
+    }
+
+    .htextMedium {
         font-size: 1.5em;
     }
 }

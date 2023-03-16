@@ -1,43 +1,28 @@
 
 const SERVER_URL = "http://localhost:3000/contacts"
 window.onload = () => {
-    //delete values
-    function clearForm() {
-        let fullName = document.querySelector('#name')
-        let email = document.querySelector('#email')
-        let phone = document.querySelector('#phone')
-        let message = document.querySelector('#message')
-
-        fullName.value = ""
-        email.value = ""
-        phone.value = ""
-        message.value = "Write your message here..."
-        email.style.backgroundColor = "rgba(107, 112, 141, 0.1)"
-        phone.style.backgroundColor = "rgba(107, 112, 141, 0.1)"
-    }
-
     //feedback
     const feedback = document.querySelector('#formFeedback')
     const titleFeedback = document.querySelector("#formFeedback .htextMedium")
     const textFeedback = document.querySelector("#formFeedback .bodyRegular")
 
     //form succesfully sent
-    function formSucceeded() {
+    function _formSucceeded() {
         feedback.classList.remove("invisible");
         feedback.classList.remove("formError");
         feedback.classList.add("formSuccess") 
         titleFeedback.innerHTML = "&#128232;Message on the way!"
         textFeedback.innerHTML = "Your information was successfully submitted -- We'll get back to you as soon as possible!"
-        clearForm();
+        
     }
 
-    //feedback - form error
-    function formFailed() {
+    //form error
+    function _formFailed() {
         feedback.classList.remove("invisible");
         feedback.classList.remove("formSuccess");
         feedback.classList.add("formError");
         titleFeedback.innerHTML = "&#129300; Oops... Looks like you missed something"
-        textFeedback.innerHTML = "Please, check the content and format of the fields marked in red below"
+        textFeedback.innerHTML = "Please, check the content of the fields marked in red below"
     }
 
     //fetch contact
@@ -52,10 +37,10 @@ window.onload = () => {
         })
         
         .catch((err)=> console.error(err))
+        .catch(formFailed())
     }
 
     function _getContact() {
-        
         const fullName = document.querySelector('#name').value
         const email = document.querySelector('#email').value
         const phone = document.querySelector('#phone').value
@@ -71,9 +56,9 @@ window.onload = () => {
     //validate and post
     function _validateEmail(email) {
         if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
-            return (true)
+            return true
         } else {
-            return (false)
+            return false
         }
     }
 
@@ -85,45 +70,53 @@ window.onload = () => {
         } 
     }
 
+    function _validateString(str) {
+        if (str) {
+            return true
+        } else {
+            return false;
+        }
+    }
+
+    function _printValues(arrBoolean, arrDOM) {
+        for (let i = 0; i<arrBoolean.length; i++) {
+            if (arrBoolean[i] === true) {
+                arrDOM[i].style.backgroundColor = "rgba(107, 112, 141, 0.1)"
+            } else {
+                arrDOM[i].style.backgroundColor = "#f9d1ca"
+            }
+        }
+    }
+
 
     function _validateAndPost() {
         const contact = _getContact();
         const email = document.querySelector('#email')
         const phone = document.querySelector('#phone')
-        
-        if(_validateEmail(contact.email) && _validatePhone(contact.phone)) {
-            _saveContactData(contact);
-            formSucceeded()
-        } else if (!_validateEmail(contact.email) && _validatePhone(contact.phone)) {
-            formFailed();
-            email.style.backgroundColor = "#f9d1ca"
-            phone.style.backgroundColor = "rgba(107, 112, 141, 0.1)"
-        } else if (!_validatePhone(contact.phone) && _validateEmail(contact.email)) {
-            formFailed();
-            phone.style.backgroundColor = "#f9d1ca"
-            email.style.backgroundColor = "rgba(107, 112, 141, 0.1)"
-        } else if (!_validatePhone(contact.phone) && !_validateEmail(contact.email)){
-            formFailed();
-            email.style.backgroundColor = "#f9d1ca";
-            phone.style.backgroundColor = "#f9d1ca"
+        const fullName = document.querySelector('#name')
+        const message = document.querySelector('#message')
+
+        const arrValidate = [_validateString(contact.fullName), _validateEmail(contact.email), _validatePhone(contact.phone), _validateString(contact.message)]
+        const arrElements = [fullName, email, phone, message]
+
+        if (!arrValidate.includes(false)) {
+            _saveContactData(contact)
+            _formSucceeded()
+            arrElements.forEach((element) => {
+                element.style.backgroundColor = "rgba(107, 112, 141, 0.1)"
+            });
+        } else {
+            _formFailed();
+            _printValues(arrValidate, arrElements)
         }
+        
     }
 
-    function bindEvents() {
+    function _bindEvents() {
         const submitButton = document.querySelector('button');
         submitButton.addEventListener('click', _validateAndPost);
     }
 
-    bindEvents();
+    _bindEvents();
 
 }
-    /*
-
-    
-    
-
-    
-    
-
-    
-    */
