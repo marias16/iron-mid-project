@@ -222,7 +222,8 @@
         flex-direction: row;
         flex-wrap:unset;
         column-gap: 10%;
-        overflow-x: scroll
+        overflow-x: scroll;
+        white-space:nowrap;
     }
 
     .logoImg {
