@@ -1,0 +1,358 @@
+/*hero*/
+
+.hero {
+    margin-top: 3.75em;
+    display:flex;
+    justify-content: center;
+    gap: 2.8em;
+    align-items: center;
+}
+
+
+.hero p {
+    margin-bottom: 2em;
+}
+
+.heroCTA {
+    display: flex;
+}
+
+.heroSecondary {
+    width: 9.4em;
+    height: 3.25em;
+    display: grid;
+    place-content: center;
+    text-align:center;
+    color: #6B708D;
+}
+
+.heroDescription {
+    width: 50%;
+}
+
+.heroImg {
+    background: url(img/hero-section/hero-image.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+#heroCardOne:hover, #heroCardTwo:hover {
+    width: 52%;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+#heroCardOne, #heroCardTwo {    
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+#heroCardOne {
+    width: 50%;
+    align-self: flex-start;
+}
+
+#heroCardTwo {
+    width: 50%;
+    align-self: flex-end;
+}
+
+/*logos*/
+.logos {
+    margin-top: 8em;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logoImg {
+    width: 10%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+
+
+/*testimonials*/
+
+.testimonials {
+    background-color:#292E47;
+    background-image: url("/img/testimonial-section/orbit.png");
+    background-size: cover;
+    padding: 3.2em 4.5em 4.6em 3.2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.testimonialsEmojis {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.testimonialsEmoji {
+    width: 9.4em;
+}
+
+.testimonialsDescription {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    gap: 6.5em;
+}
+
+.testimonialsDescription h3 {
+    color: #F4F6FC;
+}
+
+.testimonialsDescription .bodyMedium {
+    color: #FFC600;
+}
+
+.testimonialsClient {
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+
+.testimonialsClient div {
+    text-align: left;
+}
+
+.testimonialsClient p {
+    margin: 0;
+    color: #F4F6FC;
+}
+
+.testimonialsClient p:first-of-type {
+    color: #A2D6F9;
+}
+
+
+.testimonialsClient img {
+    width:50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius:100%;
+}
+
+.testimonialsEmojiRow {
+    display: none;
+}
+
+/*services*/
+
+
+.servicesCard {
+    background-color:  #FFFFFF;
+    box-sizing: border-box;
+    width: 21.25em;
+    padding: 2.5em 0.625em 1.9em 1.9em;
+    box-shadow: 0px 38.7755px 77.551px rgba(0, 0, 0, 0.1);
+    transition-duration: 1s;
+}
+
+.servicesCard:hover {
+    box-shadow: 0px 38.7755px 77.551px rgba(0, 0, 0, 0.3);
+    transition-duration: 1s;
+}
+
+.servicesIcon {
+    background-color: #ECF7FF;
+    padding: 1.25em;
+    display: inline-block;
+    border-radius: 100%;
+}
+
+.servicesIcon img {
+    width: 2.5em;
+    
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+
+    .hero {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 0;
+    }
+
+    .heroImg {
+        width:80%;
+    }
+
+    #heroCardOne {
+        width: 50%;
+        align-self: flex-start;
+    }
+    
+    #heroCardTwo {
+        width: 50%;
+        align-self: flex-end;
+    }
+
+    .heroDescription {
+        text-align: left;
+        width: 100%;
+    }
+
+    .heroCTA {
+        flex-direction: column;
+        justify-content: center;
+        gap: 1.2em;
+        
+    }
+
+    .heroCTA a {
+        width: 100%;
+        height:5em;
+        font-size: 1.2em;
+    }
+
+    .logos {
+        flex-direction: row;
+        flex-wrap:unset;
+        column-gap: 10%;
+        overflow-x: scroll;
+        white-space:nowrap;
+    }
+
+    .logoImg {
+        width: 30%;
+    }
+
+    .testimonials {
+        width: 90%;
+        margin-left: -2em;
+    }
+
+    .testimonialsEmojis {
+        display: none;
+    }
+
+    .testimonialsDescription {
+        text-align: left;
+        align-items: start;
+        gap: 5px;
+        width: 100%;
+    }
+
+    .testimonialsDescription h3{
+        margin-bottom: 0px
+    }
+
+    .services {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .servicesCard {
+        width: 95%;
+        padding-right: 10%;
+    }
+   
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 767px){
+    
+    .hero {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .hero > :first-child {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        
+    }
+
+    .hero h1 {
+        margin-bottom: 0px;
+    }
+
+    .heroImg {
+        width: 80%;
+    }
+
+    #heroCardOne {
+        width: 15em;
+        align-self: flex-start;
+    }
+    
+    #heroCardTwo {
+        width:14em;
+        align-self: flex-end;
+    }
+    
+    .heroDescription {
+        width: 100%;
+    }
+
+
+    .logos {
+        margin-left: 2.4em;
+        margin-right: 2.4em;
+    }
+
+    .logoImg {
+        width: 15%;
+        flex-wrap: wrap;
+        gap: 10%;
+    }
+    
+
+    .testimonials {
+        padding-left:2em;
+        padding-right: 2em;
+    }
+
+    .testimonialsDescription {
+        gap: 2em;
+        width: 100%;
+    }
+
+    .testimonialsEmojiRow {
+        display: flex;
+        justify-content: center;
+        margin-bottom: -2em;
+    }
+
+    .testimonialsEmoji {
+        width:9%;
+    }
+    
+    .testimonialsDescription h3 {
+        margin-bottom: 0px;
+    }
+    .testimonialsDescription .bodyMedium {
+        width: 20em;
+        font-size: 1.5em;
+    }
+
+    .testimonialsEmojis {
+        display: none;
+    }
+
+    .services {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .servicesCard {
+        width: auto;
+    }
+}
+
+
