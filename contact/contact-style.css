@@ -35,6 +35,10 @@
     padding: 1.5em 0em;
 }
 
+.contactButton:active {
+    background-color: #072ac8cd;
+}
+
 textarea {
     font-family: 'Roboto'; 
     font-weight: 400;
@@ -42,6 +46,29 @@ textarea {
     line-height: 1.87em;
     color: #6B708D;
 }
+
+
+#formFeedback {
+    padding: 0.5em 1em;
+    margin-bottom: 1em;
+}
+
+
+
+.invisible {
+    display: none;
+}
+
+.formSuccess {
+    background-color: #31bf01;
+    color: white;
+}
+
+.formError {
+    background-color: #ff7348;
+    color: white;
+}
+
 
 @media (min-width: 320px) and (max-width: 767px) {
     .contactDivision {
@@ -64,6 +91,10 @@ textarea {
 
 @media (min-width: 320px) and (max-width: 480px) {
     textarea {
+        font-size: 1.5em;
+    }
+
+    .htextMedium {
         font-size: 1.5em;
     }
 }

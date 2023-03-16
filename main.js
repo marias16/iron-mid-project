@@ -31,7 +31,6 @@ closeIcon.addEventListener('click', navClose);
         const $projectURL = document.querySelectorAll('.projectsCard a');
 
         //assign each data element to DOM elements, just three elements have to show up
-        //for the project page, the project cant show up in the section 'Other Projects'
         for(let i=0; i<=2; i++) {
             $projectImg[i].src = data[i].image;
             $projectTitle[i].innerHTML = data[i].name;
