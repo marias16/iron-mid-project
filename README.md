@@ -2,12 +2,12 @@
 Ironhack Web Development Bootcamp Mid Project
 Languages: HTML, CSS and Javascript
 
-#CSS
+#  CSS
 Media queries
 Flexbox and em 
 Effects and transition
 
-#Javascript
+# Javascript
 Hamburguer menu when mobile
 Projects: Dynamic
 Contact form and feedback
