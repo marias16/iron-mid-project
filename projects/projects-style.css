@@ -40,7 +40,7 @@ h1 {
 }
 
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (max-width: 480px) {
     .projectData {
         flex-direction: column;
         margin-top: 1em;
