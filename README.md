@@ -1,9 +1,9 @@
 # Circle 
-Ironhack Web Development Bootcamp Mid Project
+Ironhack Web Development Bootcamp Mid Project <br>
 Languages: HTML, CSS and Javascript
 
 #  CSS
-Media queries
+Media queries 
 Flexbox and em 
 Effects and transition
 
