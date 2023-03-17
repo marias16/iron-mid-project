@@ -278,6 +278,10 @@ nav {
       font-size: 0.83em;
     }
 
+    h1 {
+        font-size: 2em;
+    }
+
     .htextMedium {
         font-size: 1.2em;
     }
@@ -347,8 +351,12 @@ nav {
         font-size: 1.2em;
     }
 
-   .htextMedium, .htextRegular, .bodyRegular, .bodyMedium {
+   .htextMedium, .htextRegular, .bodyMedium {
     font-size: 1.7em;
+   }
+
+   .bodyRegular {
+    font-size: 2em;
    }
 
    .narrowSection {

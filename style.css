@@ -44,7 +44,7 @@
 }
 
 #heroCardOne:hover, #heroCardTwo:hover {
-    width: 52%;
+    width: calc(45%);
     transition-duration: 1s;
     transition-timing-function: ease-in-out;
 }
@@ -294,6 +294,12 @@
     #heroCardTwo {
         width:14em;
         align-self: flex-end;
+    }
+
+    #heroCardOne:hover, #heroCardTwo:hover {
+        width: 13.5em;
+        transition-duration: 1s;
+        transition-timing-function: ease-in-out;
     }
     
     .heroDescription {
